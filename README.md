@@ -1,2 +1,7 @@
 # Shrine-MaterialDesign2
-implementation of Material Design 2 Shrine project
+
+Trying to reproduce some elements of Material Design 2 Shrine project on Android
+
+https://material.io/design/material-studies/shrine.html#about-shrine
+
+
