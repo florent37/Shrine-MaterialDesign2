@@ -53,7 +53,7 @@ Here, to remove my view's corners, using `CutCornerView`
 
 # Sheets
 
-[![sheets](https://raw.githubusercontent.com/florent37/Shrine-MaterialDesign2/master/medias/shape_button.png)](https://github.com/florent37/Shrine-MaterialDesign2)
+[![sheets](https://raw.githubusercontent.com/florent37/Shrine-MaterialDesign2/master/medias/sheets.png)](https://github.com/florent37/Shrine-MaterialDesign2)
 
 ```
 <com.github.florent37.shapeofview.shapes.CutCornerView
