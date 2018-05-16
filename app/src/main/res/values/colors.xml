@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/shrineColor</color>
+    <color name="colorPrimaryDark">@color/shrineColor</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="shrineColor">#FEDBD0</color>
+    <color name="shrineTextColor">#422A2C</color>
+</resources>
