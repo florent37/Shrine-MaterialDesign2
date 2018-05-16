@@ -21,7 +21,17 @@ The underlying theme of Shrine’s interaction model is that of three overlappin
 
 I used [ShapeOfView](https://github.com/florent37/ShapeOfView) to allow views to have a custom shape,
 
+https://github.com/florent37/ShapeOfView
+
+```groovy
+implementation 'com.github.florent37:shapeofview:1.0.7'
+```
+
 Here, to remove my view's corners, using `CutCornerView`
+
+[![shrine_info_2](https://raw.githubusercontent.com/florent37/Shrine-MaterialDesign2/master/medias/clipcorner.png)](https://github.com/florent37/Shrine-MaterialDesign2)
+
+
 
 # Button
 
