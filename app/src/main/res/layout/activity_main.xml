@@ -27,122 +27,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:text="SHRINE"
-        app:fontFamily="@font/rubik_black"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:fontFamily="@font/rubik_black"
         app:layout_constraintBottom_toBottomOf="@+id/menu"
         app:layout_constraintStart_toEndOf="@+id/menu"
         app:layout_constraintTop_toTopOf="@+id/menu" />
 
-    <com.github.florent37.shapeofview.shapes.CutCornerView
-        android:id="@+id/middleSheet"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu"
-        app:shape_cutCorner_topLeftSize="42dp">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white"
-            >
-
-
-            <ImageView
-                android:id="@+id/cart1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                app:layout_constraintStart_toStartOf="@+id/image1"
-                app:layout_constraintTop_toTopOf="@+id/image1"
-                app:srcCompat="@drawable/ic_add_shopping_cart_black_24dp" />
-
-            <TextView
-                android:id="@+id/label1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Hight Tea Cup"
-                app:fontFamily="@font/rubik"
-                android:textColor="@color/shrineTextColor"
-                app:layout_constraintEnd_toEndOf="@+id/image1"
-                app:layout_constraintStart_toStartOf="@+id/image1"
-                app:layout_constraintTop_toBottomOf="@+id/image1" />
-
-            <TextView
-                android:id="@+id/valeur1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:text="$36"
-                app:fontFamily="@font/rubik"
-                android:textSize="20sp"
-                android:textColor="@color/shrineTextColor"
-                app:layout_constraintEnd_toEndOf="@+id/label1"
-                app:layout_constraintStart_toStartOf="@+id/label1"
-                app:layout_constraintTop_toBottomOf="@+id/label1" />
-
-            <ImageView
-                android:id="@+id/image1"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginEnd="56dp"
-                android:layout_marginLeft="56dp"
-                android:layout_marginRight="56dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="48dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintDimensionRatio="h,2:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/tea_cup" />
-
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="24dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintDimensionRatio="h,2:1"
-                app:layout_constraintEnd_toEndOf="@+id/image1"
-                app:layout_constraintStart_toStartOf="@+id/image1"
-                app:layout_constraintTop_toBottomOf="@+id/valeur1"
-                app:srcCompat="@drawable/shoes" />
-
-            <TextView
-                android:id="@+id/label2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Hopscotch Shoes"
-                app:fontFamily="@font/rubik"
-                android:textColor="@color/shrineTextColor"
-                app:layout_constraintEnd_toEndOf="@+id/image2"
-                app:layout_constraintStart_toStartOf="@+id/image2"
-                app:layout_constraintTop_toBottomOf="@+id/image2" />
-
-            <TextView
-                android:id="@+id/valeur2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:text="$36"
-                app:fontFamily="@font/rubik"
-                android:textSize="18sp"
-                android:textColor="@color/shrineTextColor"                app:layout_constraintEnd_toEndOf="@+id/label2"
-                app:layout_constraintStart_toStartOf="@+id/label2"
-                app:layout_constraintTop_toBottomOf="@+id/label2" />
-
-        </android.support.constraint.ConstraintLayout>
-
-    </com.github.florent37.shapeofview.shapes.CutCornerView>
+    <include layout="@layout/middle_sheet" />
 
     <com.github.florent37.shapeofview.shapes.CutCornerView
         android:id="@+id/topSheet"
@@ -191,19 +82,19 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
         android:elevation="3dp"
-        app:shape_cutCorner_bottomLeftSize="12dp"
-        app:shape_cutCorner_topLeftSize="12dp"
-        app:shape_cutCorner_bottomRightSize="12dp"
-        app:shape_cutCorner_topRightSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_cutCorner_bottomLeftSize="12dp"
+        app:shape_cutCorner_bottomRightSize="12dp"
+        app:shape_cutCorner_topLeftSize="12dp"
+        app:shape_cutCorner_topRightSize="12dp">
 
         <android.support.constraint.ConstraintLayout
+            android:id="@+id/addToCart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/addToCart"
             android:background="@android:color/white"
             android:foreground="?attr/selectableItemBackground">
 
